@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.section {
+  background-color: #f2f2fc;
+  min-height: 100vh;
+  display: block;
+  padding: 0 spacing(3);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.show {
+  // display: block !important;
+  opacity: 1 !important;
+}
+
+.shadow-dark {
+  // box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+  // box-shadow: 20px 20px 30px -10px #192824;
+  box-shadow: 1px 2px 3px 0 rgb(196, 144, 2);
+}

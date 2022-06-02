@@ -1,0 +1,93 @@
+.home {
+  min-height: 100vh;
+  z-index: 100;
+  background: transparent;
+  color: #fff;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .intro {
+      margin-top: spacing(5);
+      text-align: center;
+      .img-container {
+        border-radius: 50%;
+        width: 100%;
+        img {
+          border: 8px solid #ffffff;
+          border-radius: 50%;
+          display: inline-block;
+          width: 20px;
+          object-fit: cover;
+          @include sxs {
+            width: 170px;
+            height: 170px;
+          }
+          @include xl {
+            width: 220px;
+            height: 220px;
+          }
+        }
+      }
+      h1 {
+        font-weight: 700;
+        margin: spacing(2) 0 spacing(0.5);
+        @include sxs {
+          font-size: 25px;
+        }
+        @include xl {
+          font-size: 30px;
+        }
+      }
+      p {
+        font-weight: 500;
+        margin: 0;
+        line-height: spacing(2.2);
+        color: #fff;
+        animation: show;
+        animation-duration: 2s;
+        @include sxs {
+          font-size: 14px;
+        }
+        @include xl {
+          font-size: 16px;
+        }
+      }
+      .social-link {
+        margin-top: spacing(2);
+        animation: show;
+        animation-duration: 1s;
+        animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+        a {
+          width: 35px;
+          height: 35px;
+          display: inline-block;
+          text-align: center;
+          background-color: #a56f2c;
+          margin: spacing(0.5);
+          border-radius: 50%;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+          i {
+            color: #ffffff;
+          }
+          @include sxs {
+            width: 30px;
+            height: 30px;
+            line-height: spacing(3);
+          }
+          @include xl {
+            width: 35px;
+            height: 35px;
+            line-height: spacing(3.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+

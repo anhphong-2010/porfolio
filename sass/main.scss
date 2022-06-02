@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import "./Base/reset";
+@import "./Helper/function";
+@import "./Components/modal";
+@import "./Helper/mixin";
+@import "./Components/animation";
+
+.main-container {
+  .section-content {
+    width: 100%;
+    .inside {
+      z-index: 100;
+      width: 270px;
+      background-color: #fdf9ff;
+      border-right: 1px solid #e8dfec;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      padding: spacing(3);
+      transition: all 0.3s linear;
+      @include sxs {
+        transform: translateX(-100%);
+        width: 200px;
+      }
+      @include xs {
+        transform: translateX(-100%);
+      }
+      @include sm {
+        transform: translateX(-100%);
+        width: 200px;
+      }
+      @include md {
+        transform: translateX(-100%);
+        width: 270px;
+      }
+      @include lg {
+        transform: translateX(0);
+        width: 270px;
+      }
+      @include xl {
+        transform: translateX(0);
+        width: 270px;
+      }
+      &.active {
+        @include sxs {
+          transform: translateX(0);
+        }
+        @include xs {
+          transform: translateX(0);
+        }
+      }
+      .nav-toggler {
+        height: 45px;
+        width: 45px;
+        border: 1px solid #d4d4e3;
+        background-color: #ffffff;
+        cursor: pointer;
+        position: fixed;
+        left: 290px;
+        top: 30px;
+        z-index: 1000;
+        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        @include sxs {
+          display: block;
+          height: 35px;
+          width: 35px;
+          left: 215px;
+        }
+        @include xs {
+          display: block;
+        }
+        @include sm {
+          display: block;
+          left: 220px;
+          height: 45px;
+          width: 45px;
+        }
+        @include md {
+          display: block;
+          left: 290px;
+          height: 45px;
+          width: 45px;
+        }
+        @include lg {
+          display: none;
+        }
+        &.toggle {
+          span {
+            @include sxs {
+              background-color: transparent;
+            }
+            @include xs {
+              background-color: transparent;
+            }
+            &::before {
+              @include sxs {
+                top: 0;
+                transform: rotate(45deg);
+              }
+              @include xs {
+                top: 0;
+                transform: rotate(45deg);
+              }
+            }
+            &::after {
+              @include sxs {
+                top: 0;
+                transform: rotate(-45deg);
+              }
+              @include xs {
+                top: 0;
+                transform: rotate(-45deg);
+              }
+            }
+          }
+        }
+        span {
+          height: 2px;
+          width: 16px;
+          display: inline-block;
+          text-align: center;
+          background-color: #eb9e34;
+          position: relative;
+          margin: spacing(2) spacing(1.2);
+          @include sxs {
+            margin: spacing(0) spacing(0.7);
+          }
+          @include xs {
+            margin: spacing(0) spacing(0.7);
+          }
+          @include sm {
+            margin: spacing(2) spacing(1.2);
+          }
+          @include md {
+            margin: spacing(2) spacing(1.2);
+          }
+          &::before {
+            content: "";
+            height: 2px;
+            width: 18px;
+            position: absolute;
+            top: 6px;
+            left: 0;
+            background-color: #eb9e34;
+            transition: all 0.4s ease-in-out;
+          }
+          &::after {
+            content: "";
+            height: 2px;
+            width: 18px;
+            position: absolute;
+            top: -6px;
+            left: 0;
+            background-color: #eb9e34;
+            transition: all 0.4s ease-in-out;
+          }
+        }
+      }
+      .nav {
+        list-style: none;
+        margin: spacing(1) 0 spacing(25) 0;
+        padding: 0;
+        li {
+          display: block;
+          a {
+            font-weight: 600;
+            color: #302e4d;
+            display: block;
+            text-decoration: none;
+            line-height: spacing(4.5);
+            border-bottom: 1px solid #e8dfec;
+            transition: all 0.3s ease;
+            text-transform: capitalize;
+            @include sxs {
+              font-size: 14px;
+            }
+            @include xl {
+              font-size: 16px;
+            }
+            .fa {
+              margin-right: spacing(0.5);
+            }
+            &:not(.active):hover {
+              padding-left: spacing(0.5);
+            }
+            &.active {
+              color: #a56f2c;
+            }
+          }
+        }
+      }
+      .inside-footer {
+        .footer-text {
+          cursor: pointer;
+          transition: all 0.3s ease;
+          font-weight: 400;
+          position: absolute;
+          bottom: 5%;
+          &:hover {
+            color: #a56f2c;
+          }
+          @include sxs {
+            font-size: 9px;
+          }
+          @include xs {
+            font-size: 9px;
+          }
+          @include sm {
+            font-size: 9px;
+          }
+          @include md {
+            font-size: 10px;
+          }
+          @include lg {
+            font-size: 12px;
+          }
+          @include xl {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .main-content {
+      padding-left: 270px;
+      position: relative;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      height: 100%;
+      .section-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        video {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .color-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        opacity: 0.5;
+        color: lightblue;
+      }
+      @include sxs {
+        padding-left: 0;
+      }
+      @include xs {
+        padding-left: 0;
+      }
+      @include sm {
+        padding-left: 0;
+      }
+      @include md {
+        padding-left: 0;
+      }
+      @include lg {
+        padding-left: 270px;
+      }
+      @include xl {
+        padding-left: 270px;
+      }
+      @import "./Layouts/home";
+      @import "./Layouts/about";
+      @import "./Layouts/skills";
+      @import "./Layouts/career";
+      @import "./Layouts/projects";
+    }
+  }
+}

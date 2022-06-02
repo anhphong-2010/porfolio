@@ -1,0 +1,183 @@
+.skill {
+  width: 100%;
+  @include sxs {
+    padding-top: spacing(5);
+  }
+  @include xs {
+    padding-top: spacing(5);
+  }
+  @include sm {
+    padding-top: spacing(5);
+  }
+  @include md {
+    padding-top: spacing(5);
+  }
+  @include lg {
+    padding-top: 0;
+  }
+  .container {
+    padding: spacing(3) spacing(5);
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 spacing(-1.5);
+      position: relative;
+      .section-title {
+        flex: 0 0 100%;
+        max-width: 100%;
+        h2 {
+          color: #fff;
+          font-weight: 700;
+          @include sxs {
+            font-size: 35px;
+            animation: slidefromright 1s linear;
+          }
+          @include xl {
+            font-size: 40px;
+            animation: slidefromleft 1s linear;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            height: 4px;
+            width: 50px;
+            top: 100%;
+            left: 0;
+            background-color: #a56f2c;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            height: 4px;
+            width: 35px;
+            top: 100%;
+            margin-top: spacing(-0.8);
+            left: 0;
+            background-color: #a56f2c;
+          }
+        }
+      }
+    }
+    .row {
+      flex: 0 0 100%;
+      max-width: 100%;
+      .skill-content {
+        flex: 0 0 50%;
+        max-width: 50%;
+        @include sxs {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        @include xs {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        @include md {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+        .skill-item {
+          animation: show 2s linear;
+          margin: spacing(2) spacing(2);
+          @include sxs {
+            margin: spacing(2) 0;
+          }
+          @include xs {
+            margin: spacing(2) 0;
+          }
+          @include md {
+            margin: spacing(2) spacing(0);
+          }
+          h5 {
+            line-height: 40px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: capitalize;
+            margin: 0;
+            @include sxs {
+              font-size: 14px;
+            }
+            @include xl {
+              font-size: 16px;
+            }
+          }
+          .progress {
+            background-color: #e3e3e3;
+            height: 13px;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            .progress-in {
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 100%;
+              border-radius: 10px;
+              background-color: #a56f2c;
+              animation-name: mymove;
+              animation-duration: 2s;
+              animation-iteration-count: 1;
+            }
+            .skill-percent {
+              position: absolute;
+              line-height: 40px;
+              right: 1%;
+              top: -12px;
+              font-weight: 400;
+              color: #fff;
+              @include sxs {
+                font-size: 12px;
+              }
+              @include xs {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+      .knowledge-content {
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding: spacing(3) spacing(0) 0 spacing(10);
+        animation: show 2s ease-in-out;
+        color: #fff;
+        @include sxs {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 0;
+          margin-top: spacing(2);
+        }
+        @include xs {
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 0;
+          margin-top: spacing(2);
+        }
+        @include md {
+          flex: 0 0 25%;
+          max-width: 25%;
+          padding: spacing(1) spacing(0) 0 spacing(7);
+        }
+        .knowledge-list {
+          padding: spacing(1.5);
+          li {
+            margin-bottom: spacing(1.7);
+          }
+        }
+      }
+    }
+  }
+}
+@-webkit-keyframes mymove {
+  0% {
+    width: 50px;
+  }
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  0% {
+    width: 50px;
+  }
+}

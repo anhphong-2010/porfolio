@@ -1,0 +1,206 @@
+.about {
+  @include sxs {
+    padding-top: spacing(5);
+  }
+  @include xs {
+    padding-top: spacing(5);
+  }
+  @include sm {
+    padding-top: spacing(5);
+  }
+  @include md {
+    padding-top: spacing(5);
+  }
+  @include lg {
+    padding-top: 0;
+  }
+  .container {
+    padding: spacing(3) spacing(5);
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 spacing(-1.5);
+      position: relative;
+      .section-title {
+        flex: 0 0 100%;
+        max-width: 100%;
+        h2 {
+          color: #fff;
+          font-weight: 700;
+          @include sxs {
+            font-size: 35px;
+            animation: slidefromright 1s linear;
+          }
+          @include xl {
+            font-size: 40px;
+            animation: slidefromleft 1s linear;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            height: 4px;
+            width: 50px;
+            top: 100%;
+            left: 0;
+            background-color: #a56f2c;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            height: 4px;
+            width: 35px;
+            top: 100%;
+            margin-top: spacing(-0.8);
+            left: 0;
+            background-color: #a56f2c;
+          }
+        }
+      }
+    }
+    .row {
+      .about-content {
+        margin-top: spacing(5);
+        .about-text {
+          flex: 0 0 100%;
+          max-width: 100%;
+          h3 {
+            margin-bottom: spacing(1.5);
+            font-size: 24px;
+            color: #fff;
+
+            @include sxs {
+              font-size: 20px;
+              animation: slidefromright 1.6s linear;
+            }
+            @include xl {
+              font-size: 24px;
+              animation: slidefromleft 1.6s linear;
+            }
+            span {
+              color: #eb9e34;
+            }
+          }
+          p {
+            line-height: spacing(2.5);
+            color: #fff;
+            margin: 0;
+            @include sxs {
+              font-size: 14px;
+              animation: slidefromright 1.8s linear;
+            }
+            @include xl {
+              font-size: 16px;
+              animation: slidefromleft 1.8s linear;
+            }
+          }
+        }
+      }
+    }
+    .row {
+      .personal-info {
+        margin: spacing(5) spacing(1.5);
+        flex: 0 0 70%;
+        max-width: 70%;
+        @include sxs {
+          flex: 0 0 90%;
+          max-width: 90%;
+          animation: slidefromright 1.9s linear;
+        }
+        @include xs {
+          flex: 0 0 90%;
+          max-width: 90%;
+          animation: slidefromright 1.9s linear;
+        }
+        @include md {
+          flex: 0 0 95%;
+          max-width: 95%;
+          animation: slidefromright 1.9s linear;
+        }
+        @include lg {
+          animation: slidefromleft 1.9s linear;
+        }
+        @include xl {
+          animation: slidefromleft 1.9s linear;
+        }
+        .info-item {
+          flex: 0 0 50%;
+          max-width: 50%;
+          @include sxs {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+          @include xs {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+          @include md {
+            flex: 0 0 50%;
+            max-width: 50%;
+          }
+          p {
+            font-weight: 600;
+            color: #fff;
+            padding: spacing(1) 0;
+            border-bottom: 1px solid #e8dfec;
+            @include sxs {
+              font-size: 14px;
+            }
+            @include xl {
+              font-size: 16px;
+            }
+            span {
+              font-weight: 400;
+              color: #fff;
+              margin-left: spacing(0.4);
+              display: inline-block;
+              @include sxs {
+                font-size: 13px;
+              }
+              @include xl {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .row {
+      .buttons {
+        .btn {
+          font-size: 16px;
+          padding: spacing(1) spacing(3.5);
+          color: #ffffff;
+          font-weight: 500;
+          background-color: #a56f2c;
+          border-radius: spacing(3);
+          white-space: nowrap;
+          transition: all 0.3s ease;
+          display: inline-block;
+          &:hover {
+            transform: scale(1.1);
+          }
+          @include sxs {
+            font-size: 14px;
+            animation: slidefromright 2s ease-in-out;
+          }
+          @include xs {
+            animation: slidefromright 2s ease-in-out;
+          }
+          @include sm {
+            animation: slidefromright 2s ease-in-out;
+          }
+          @include md {
+            animation: slidefromright 2s ease-in-out;
+          }
+          @include lg {
+            animation: slidefromleft 2s ease-in-out;
+          }
+          @include xl {
+            font-size: 16px;
+            animation: slidefromleft 2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

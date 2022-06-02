@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="section-content">
+        <div id="inside" class="inside">
+          <div class="nav-toggler">
+            <span></span>
+          </div>
+          <ul class="nav">
+            <li>
+              <a class="active" href="#" onclick="showPanel(0)"
+                ><i class="fa fa-home"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="showPanel(1)"
+                ><i class="fa fa-user"></i> About</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="showPanel(2)"
+                ><i class="fa fa-suitcase"></i> Career</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="showPanel(3)"
+                ><i class="fa fa-laptop-code"></i> Skill</a
+              >
+            </li>
+            <li>
+              <a href="#" onclick="showPanel(4)"
+                ><i class="fa fa-folder-open"></i> Projects</a
+              >
+            </li>
+          </ul>
+          <div class="inside-footer">
+            <h2 class="footer-text">&copy; 2020 - Developed by Anh Phong.</h2>
+          </div>
+        </div>
+        <div class="main-content">
+          <div class="section-video">
+            <video autoplay loop muted>
+              <source src="img/bg.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="color-overlay"></div>
+          <section class="home section">
+            <div class="container">
+              <div class="intro">
+                <div class="img-container">
+                  <img src="./img/avt2.jpg" class="shadow-dark" alt="avt" />
+                </div>
+                <h1>Anh Phong</h1>
+                <p>I'm a Frontend Developer</p>
+                <div class="social-link">
+                  <a target="_blank" href="#"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a target="_blank" href="https://twitter.com/AnhPhong201095"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.youtube.com/channel/UCn3F9fdaEynmRP5D0XhhMjA?view_as=subscriber"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/phong-hua-14a6031a7/"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="about section" style="display: none">
+            <div class="container">
+              <div class="row">
+                <div class="section-title">
+                  <h2>About Me</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="about-content">
+                  <div class="about-text">
+                    <h3>I'm Hua Anh Phong and I'm a <span>Developer</span></h3>
+                    <p>
+                      I used to be an IT Helpdesk. During period of time that i
+                      was working in this position, I approached with the
+                      programming, which i used to learn at the University. Day
+                      by day, programming made me feeling so excited. Not only
+                      that, it also helped me to improve my research skill and
+                      logical thinking. Finally, I have decided to register for
+                      the website development course (<b>Front-end</b>) and I
+                      know this shifting decision will be difficult for me, but
+                      because of my passion I will try. Now, I'd like to become
+                      a Frontend developer, but i'll try hard to become a Web
+                      Developer in the future.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="personal-info">
+                  <div class="row">
+                    <div class="info-item">
+                      <p>Birthday: <span>20 Oct 1995</span></p>
+                    </div>
+                    <div class="info-item">
+                      <p>Email: <span>anhphongnw.2010@gmail.com</span></p>
+                    </div>
+                    <div class="info-item">
+                      <p>Phone: <span>+84362488665</span></p>
+                    </div>
+                    <div class="info-item">
+                      <p>Address: <span>Ho Chi Minh, VN</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="buttons">
+                  <a
+                    target="_blank"
+                    href="https://s3-ap-southeast-1.amazonaws.com/glints-dashboard/resume/f77c8e0ef12b706e73ee2a1140d7aadf.pdf"
+                    class="btn"
+                    >Download CV</a
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="career section" style="display: none">
+            <div class="container">
+              <div class="row">
+                <div class="section-title">
+                  <h2>Career</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="education">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box">
+                      <div class="timeline shadow-dark">
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i> Oct 2013 - May 2016
+                          </h6>
+                          <h4 class="timeline-title">
+                            HUTECH University of Technology
+                          </h4>
+                          <p class="timeline-text">Associate Degree</p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i> Oct 2016 - Oct 2017
+                          </h6>
+                          <h4 class="timeline-title">Nhat Nghe JSC</h4>
+                          <p class="timeline-text">
+                            Routing & Switching (CCNA)<br />
+                            Microsoft Certified Solutions Associate (MCSA)
+                          </p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i> Feb 2018 - Jan 2020
+                          </h6>
+                          <h4 class="timeline-title">
+                            HUTECH University of Technology
+                          </h4>
+                          <p class="timeline-text">
+                            College to university transition course.
+                          </p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i> Jul 2019 - Sep 2019
+                          </h6>
+                          <h4 class="timeline-title">CyberSoft Academy</h4>
+                          <p class="timeline-text">
+                            Training thinking, algorithms, OOP and analytical
+                            skills.
+                          </p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i> Dec 2019 - July 2020
+                          </h6>
+                          <h4 class="timeline-title">CyberSoft Academy</h4>
+                          <p class="timeline-text">
+                            - Learn HTML5, CSS3, Animation, Bootstrap,
+                            Responsive, SCSS, JS Prototype, ES6.<br />
+                            - Use Axios Library to work with Database through
+                            Restful API.<br />
+                            - Works with ReactJS library includes: State, Props,
+                            Redux, React Hook,...<br />
+                            - Learn how to use AngularJS 2+ framework.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="experience">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box">
+                      <div class="timeline shadow-dark">
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i> Oct 2018 - Aug 2019
+                          </h6>
+                          <h4 class="timeline-title">
+                            IT Helpdesk / CyberLogitec Vietnam Co., Ltd.
+                          </h4>
+                          <p class="timeline-text">
+                            - Asset management.<br />
+                            - Administered enterprise Active Directory do main,
+                            managed account mail.<br />
+                            - Diagnosed and troubleshot problems with Printer,
+                            PCs, software, communications devices, servers and
+                            network connections.
+                          </p>
+                        </div>
+                        <div class="timeline-item">
+                          <div class="circle-dot"></div>
+                          <h6 class="timeline-date">
+                            <i class="fa fa-calendar"></i> Oct 2020 - Jan 2021
+                          </h6>
+                          <h4 class="timeline-title">
+                            Front-end Developer / Kyanon Digital
+                          </h4>
+                          <p class="timeline-text">
+                            - Convert PSD, Figma design file to HTML.<br />
+                            - Coordinate with Back End developers in the
+                            process.<br />
+                            - Research and optimize source code.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="skill section" style="display: none">
+            <div class="container">
+              <div class="row">
+                <div class="section-title">
+                  <h2>Skills</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="skill-content">
+                  <div class="skill-item">
+                    <h5>HTML</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 57%"></div>
+                      <!-- <div class="skill-percent">70%</div> -->
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <h5>CSS</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 55%"></div>
+                      <!-- <div class="skill-percent">65%</div> -->
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <h5>ES6</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 50%"></div>
+                      <!-- <div class="skill-percent">55%</div> -->
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <h5>Object-oriented programming (OOP)</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 50%"></div>
+                      <!-- <div class="skill-percent">30%</div> -->
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <h5>ReactJS</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 43%"></div>
+                      <!-- <div class="skill-percent">50%</div> -->
+                    </div>
+                  </div>
+                  <div class="skill-item">
+                    <h5>AngularJS</h5>
+                    <div class="progress">
+                      <div class="progress-in" style="width: 30%"></div>
+                      <!-- <div class="skill-percent">30%</div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="knowledge-content">
+                  <div class="knowledge-title">
+                    <h3>Knowledge</h3>
+                  </div>
+                  <ul class="knowledge-list">
+                    <li>Pug</li>
+                    <li>SCSS</li>
+                    <li>Restful API</li>
+                    <li>Redux</li>
+                    <li>React Hook</li>
+                  </ul>
+                </div>
+                <div class="knowledge-content">
+                  <div class="knowledge-title">
+                    <h3>UI Libraries</h3>
+                  </div>
+                  <ul class="knowledge-list">
+                    <li>Bootstrap</li>
+                    <li>Material UI</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="project section" style="display: none">
+            <div class="container">
+              <div class="row">
+                <div class="section-title">
+                  <h2>Projects</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="project-item">
+                  <div class="project-item-inner">
+                    <div class="project-img">
+                      <img src="https://i.ibb.co/jH9rNmj/p2.png" alt="" />
+                    </div>
+                    <div class="project-info">
+                      <h4>E-Learning</h4>
+                      <div class="icon">
+                        <i class="fab fa-sass" style="color: #f34aeb"></i>
+                      </div>
+                      <div class="play">
+                        <i class="fa fa-play"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-item">
+                  <div class="project-item-inner">
+                    <div class="project-img">
+                      <img src="https://i.ibb.co/8Y4N7Tb/p3.png" alt="" />
+                    </div>
+                    <div class="project-info">
+                      <h4>E-commerce</h4>
+                      <div class="icon">
+                        <i class="fab fa-java" style="color: #0415aa"></i>
+                      </div>
+                      <div id="myBtn" class="play">
+                        <i class="fa fa-play"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-item">
+                  <div class="project-item-inner">
+                    <div class="project-img">
+                      <img src="https://i.ibb.co/zHNcyYM/p4.png" alt="" />
+                    </div>
+                    <div class="project-info">
+                      <h4>Shopping</h4>
+                      <div class="icon">
+                        <i class="fab fa-html5" style="color: #e44343"></i>
+                      </div>
+                      <div id="myBtnHTML" class="play">
+                        <i class="fa fa-play"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-item">
+                  <div class="project-item-inner">
+                    <div class="project-img">
+                      <img src="https://i.ibb.co/Kmn8brw/p5.png" alt="" />
+                    </div>
+                    <div class="project-info">
+                      <h4>Mobile Shop</h4>
+                      <div class="icon">
+                        <i class="fab fa-js-square" style="color: #e9e647"></i>
+                      </div>
+                      <div class="play">
+                        <i class="fa fa-play"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-item">
+                  <div class="project-item-inner">
+                    <div class="project-img">
+                      <img src="https://i.ibb.co/42Q4zZ4/p1.png" alt="" />
+                    </div>
+                    <div class="project-info">
+                      <h4>Booking Ticket Movie</h4>
+                      <div class="icon">
+                        <i class="fab fa-react" style="color: #07c5ff"></i>
+                      </div>
+                      <div id="myBtnReactJS" class="play">
+                        <i class="fa fa-play"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-item">
+                  <div class="project-item-inner">
+                    <div class="project-img">
+                      <img
+                        src="https://i.ibb.co/CQ1ck5w/angularjs.png"
+                        alt="asdas"
+                      />
+                    </div>
+                    <div class="project-info">
+                      <h4>Booking Ticket Movie</h4>
+                      <div class="icon">
+                        <i class="fab fa-angular" style="color: #e90808f3"></i>
+                      </div>
+                      <div id="myBtnAngular" class="play">
+                        <i class="fa fa-play"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe
+            width="100%"
+            height="350px"
+            src="https://www.youtube.com/embed/UFZuWG_tqwM"
+            frameborder="1"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="close">
+            <span>X</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL REACTJS -->
+    <div id="myModalReactJS" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe
+            width="100%"
+            height="370px"
+            src="https://www.youtube.com/embed/DDiP2IKH9Qc"
+            frameborder="1"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="closeReactJS">
+            <span>X</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL HTML -->
+    <div id="myModalHTML" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe
+            width="100%"
+            height="370px"
+            src="https://www.youtube.com/embed/e_r7kHOqjZo"
+            frameborder="1"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="closeHTML">
+            <span>X</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL Angular -->
+    <div id="myModalAngular" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe
+            width="100%"
+            height="370px"
+            src="https://www.youtube.com/embed/3Jmnd1NCeVY"
+            frameborder="1"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="closeAngular">
+            <span>X</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".nav li a").click(function () {
+          $(".nav li a").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+      var tabButtons = document.querySelectorAll(".nav li a");
+      var tabPanels = document.querySelectorAll(".main-content section");
+
+      function showPanel(panelIndex) {
+        tabPanels.forEach(function (node) {
+          node.style.display = "none";
+        });
+        tabPanels[panelIndex].style.display = "block";
+      }
+
+      $(".skill-percent").each(function () {
+        $(this)
+          .prop("Counter", 0)
+          .animate(
+            {
+              Counter: $(this).text(),
+            },
+            {
+              duration: 4000,
+              easing: "swing",
+              step: function (now) {
+                $(this).text(Math.ceil(now) + "%");
+              },
+            }
+          );
+      });
+
+      // OPEN MODAL ECOMMERCE
+      var modalJava = document.getElementById("myModal");
+      var btnJava = document.getElementById("myBtn");
+      var spanJava = document.getElementsByClassName("close")[0];
+      btnJava.onclick = function () {
+        modalJava.style.display = "block";
+      };
+      spanJava.onclick = function () {
+        modalJava.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target === modalJava) {
+          modalJava.style.display = "none";
+        }
+      };
+      // OPEN MODAL REACTJS
+      var modalReact = document.getElementById("myModalReactJS");
+      var btnReact = document.getElementById("myBtnReactJS");
+      var spanReact = document.getElementsByClassName("closeReactJS")[0];
+      btnReact.onclick = function () {
+        modalReact.style.display = "block";
+      };
+      spanReact.onclick = function () {
+        modalReact.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target === modalReact) {
+          modalReact.style.display = "none";
+        }
+      };
+
+      // OPEN MODAL HTML
+      var modalHTML = document.getElementById("myModalHTML");
+      var btnHTML = document.getElementById("myBtnHTML");
+      var spanHTML = document.getElementsByClassName("closeHTML")[0];
+      btnHTML.onclick = function () {
+        modalHTML.style.display = "block";
+      };
+      spanHTML.onclick = function () {
+        modalHTML.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target === modalHTML) {
+          modalHTML.style.display = "none";
+        }
+      };
+
+      // OPEN MODAL ANGULAR
+      var modalAngular = document.getElementById("myModalAngular");
+      var btnAngular = document.getElementById("myBtnAngular");
+      var spanAngular = document.getElementsByClassName("closeAngular")[0];
+      btnAngular.onclick = function () {
+        modalAngular.style.display = "block";
+      };
+      spanAngular.onclick = function () {
+        modalAngular.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target === modalAngular) {
+          modalAngular.style.display = "none";
+        }
+      };
+      // MENU TOGGLE
+
+      $(document).ready(function () {
+        $(".nav-toggler").click(function () {
+          $(".inside").toggleClass("active");
+          $(".nav-toggler").toggleClass("toggle");
+        });
+        $(".nav li a").click(function () {
+          $(".inside").removeClass("active");
+          $(".nav-toggler").removeClass("toggle");
+        });
+      });
+
+      $(".project-item").click(function () {
+        $(".project-item .project-info").toggleClass("show");
+        $(".project-item .project-info .play").toggleClass("show");
+        $(".project-item .project-info h4").toggleClass("show");
+        $(".project-item .project-info .icon").toggleClass("show");
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,302 @@
+.career {
+  @include sxs {
+    padding-top: spacing(5);
+  }
+  @include xs {
+    padding-top: spacing(5);
+  }
+  @include sm {
+    padding-top: spacing(5);
+  }
+  @include md {
+    padding-top: spacing(5);
+  }
+  @include lg {
+    padding-top: 0;
+  }
+  .container {
+    padding: spacing(0) spacing(3);
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      .section-title {
+        flex: 0 0 100%;
+        max-width: 100%;
+        h2 {
+          color: #fff;
+          font-weight: 700;
+          @include sxs {
+            font-size: 35px;
+            animation: slidefromright 1s linear;
+          }
+          @include lg {
+            animation: slidefromleft 1s linear;
+          }
+          @include xl {
+            font-size: 40px;
+            animation: slidefromleft 1s linear;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            height: 4px;
+            width: 50px;
+            top: 100%;
+            left: 0;
+            background-color: #a56f2c;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            height: 4px;
+            width: 35px;
+            top: 100%;
+            margin-top: spacing(-0.8);
+            left: 0;
+            background-color: #a56f2c;
+          }
+        }
+      }
+    }
+    .row {
+      margin-bottom: spacing(3);
+      .education {
+        @include sxs {
+          flex: 0 0 100%;
+          max-width: 100%;
+          animation: slidefromright 1.5s linear;
+        }
+        @include xs {
+          flex: 0 0 100%;
+          max-width: 100%;
+          animation: slidefromright 1.5s linear;
+        }
+        @include lg {
+          animation: slidefromleft 1.5s linear;
+        }
+        @include xl {
+          flex: 0 0 50%;
+          max-width: 50%;
+          animation: slidefromleft 1.5s linear;
+        }
+        .title {
+          margin-bottom: spacing(1.5);
+          font-weight: 700;
+          color: #fff;
+          @include sxs {
+            font-size: 20px;
+          }
+          @include xl {
+            font-size: 24px;
+          }
+        }
+        .timeline-box {
+          @include xs {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+          @include xl {
+            flex: 0 0 95%;
+            max-width: 95%;
+          }
+          .timeline {
+            background: #fdf9ff;
+            @include sxs {
+              padding: spacing(1) spacing(1);
+            }
+            @include xl {
+              padding: spacing(1) spacing(2);
+            }
+            border: 1px solid #d4d4e3;
+            border-radius: 10px;
+            width: 100%;
+            .timeline-item {
+              padding: spacing(2.5);
+              border-bottom: 1px solid #d4d4e3;
+              position: relative;
+              &::before {
+                content: "";
+                width: 2px;
+                position: absolute;
+                background-color: #a56f2c;
+                height: 100%;
+                left: 0;
+                top: 0;
+              }
+              &:last-child {
+                border-bottom: none;
+              }
+              .circle-dot {
+                content: "";
+                height: 15px;
+                width: 15px;
+                left: -7px;
+                top: -10px;
+                position: absolute;
+                border-radius: 50%;
+                background-color: #a56f2c;
+              }
+              .timeline-date {
+                font-weight: 400;
+                color: #a56f2c;
+                margin-bottom: spacing(1);
+                @include sxs {
+                  font-size: 13px;
+                }
+                @include xl {
+                  font-size: 15px;
+                }
+              }
+              .timeline-title {
+                font-weight: 700;
+                margin-bottom: spacing(1);
+                text-transform: capitalize;
+                color: #302e4d;
+                @include sxs {
+                  font-size: 15px;
+                }
+                @include xl {
+                  font-size: 18px;
+                }
+              }
+              .timeline-text {
+                line-height: 25px;
+                color: #550044;
+                margin: 0;
+                letter-spacing: 0.5px;
+                @include sxs {
+                  font-size: 14px;
+                }
+                @include xl {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .experience {
+        animation: slidefromright 1.5s linear;
+        @include xs {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        @include xl {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+        .title {
+          margin-bottom: spacing(1.5);
+          font-weight: 700;
+          color: #fff;
+          @include sxs {
+            font-size: 20px;
+          }
+          @include xl {
+            font-size: 24px;
+          }
+        }
+        .timeline-box {
+          @include xs {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+          @include xl {
+            flex: 0 0 95%;
+            max-width: 95%;
+          }
+          .timeline {
+            background: #fdf9ff;
+            @include sxs {
+              padding: spacing(1) spacing(1);
+            }
+            @include xl {
+              padding: spacing(1) spacing(2);
+            }
+            border: 1px solid #d4d4e3;
+            border-radius: 10px;
+            width: 100%;
+            .timeline-item {
+              padding: spacing(2.5);
+              border-bottom: 1px solid #d4d4e3;
+              position: relative;
+              &::before {
+                content: "";
+                width: 2px;
+                position: absolute;
+                background-color: #a56f2c;
+                height: 100%;
+                left: 0;
+                top: 0;
+              }
+              &:last-child {
+                border-bottom: none;
+              }
+              .circle-dot {
+                content: "";
+                height: 15px;
+                width: 15px;
+                left: -7px;
+                top: -10px;
+                position: absolute;
+                border-radius: 50%;
+                background-color: #a56f2c;
+              }
+              .timeline-date {
+                font-weight: 400;
+                color: #a56f2c;
+                margin-bottom: spacing(1);
+                @include sxs {
+                  font-size: 13px;
+                }
+                @include xl {
+                  font-size: 15px;
+                }
+              }
+              .timeline-title {
+                font-weight: 700;
+                margin-bottom: spacing(1);
+                text-transform: capitalize;
+                color: #302e4d;
+                @include sxs {
+                  font-size: 15px;
+                }
+                @include xl {
+                  font-size: 18px;
+                }
+              }
+              .timeline-text {
+                line-height: 25px;
+                color: #550044;
+                margin: 0;
+                letter-spacing: 0.5px;
+                @include sxs {
+                  font-size: 14px;
+                }
+                @include xl {
+                  font-size: 16px;
+                }
+              }
+              .timeline-list {
+                margin-left: 32px;
+                li {
+                  line-height: 25px;
+                  color: #550044;
+                  margin: 0;
+                  letter-spacing: 0.5px;
+                  @include sxs {
+                    font-size: 14px;
+                  }
+                  @include xl {
+                    font-size: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
